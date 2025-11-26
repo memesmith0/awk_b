@@ -1,1 +1,2 @@
+#!/usr/bin/env sh
 awk "$(cat| awk '/^main$/{print "END{"}!/^main$/{print}END{print "}"}')";
